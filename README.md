@@ -35,17 +35,17 @@ Therefore, I am re-define my project and here are my new five milestones:
 # 03/18/2019 updates #
 ######################
 The intial gaming idea: 
-    1. Create a 16*16 game area matrix.
-    2. Randomly pops out a target object inside the matrix.
-    3. Move the cursor to the object and score one.
+   1. Create a 16*16 game area matrix.
+   2. Randomly pops out a target object inside the matrix.
+   3. Move the cursor to the object and score one.
 The useful summary from NCURSES study:
-      - stdscr at the current (y,x) co-ordinates
-      - the keypad() initialization function can enable the arrow keys
-      - mvaddch() to move the cursor to a given point
-      - start_color() to add color to the GUI
-      - init_pair(1, COLOR_RED, COLOR_BLACK) to set up a pair of colors 
-      - ch = getch() & ch == KEY_LEFT to get the arrow keys
-      - function getyx() can be used to find out the present cursor co-ordinates
+   - stdscr at the current (y,x) co-ordinates
+   - the keypad() initialization function can enable the arrow keys
+   - mvaddch() to move the cursor to a given point
+   - start_color() to add color to the GUI
+   - init_pair(1, COLOR_RED, COLOR_BLACK) to set up a pair of colors 
+   - ch = getch() & ch == KEY_LEFT to get the arrow keys
+   - function getyx() can be used to find out the present cursor co-ordinates
 
 
 
