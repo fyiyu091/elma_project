@@ -47,5 +47,13 @@ The useful summary from NCURSES study:
    - ch = getch() & ch == KEY_LEFT to get the arrow keys
    - function getyx() can be used to find out the present cursor co-ordinates
 
+######################
+# 03/19/2019 updates #
+######################
+The statemachine design details.
+The states: 
+   - off state, start event will transit to active state
+   - active state, collect 5 points will transit to the win state, 'q' will transits to the off state
+   - win state, print message on the screen and exit event will transit to the off state
 
 
