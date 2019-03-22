@@ -9,7 +9,6 @@ The source code for this project is available [on github](https://github.com/kla
 
 Installation
 ---
-
     git clone https://github.com/fyiyu091/elma_project
     cd elma_project
     docker run -v $PWD:/source -it klavins/elma:latest bash
@@ -18,7 +17,7 @@ Installation
 
 Execution
 ---
-To run the gascar, type
+To run the gascar model, type
 
     bin/gascar
 
@@ -32,12 +31,13 @@ The gascar is controlled via the keyboard, via these keys:
 - **f**: to fillgas state
 - **a**: add gas
 - **r**: back to active state
+- **p**: park to off state
 
 Architecture
 ---
 - The gascar project is essentially a statemachine that has three states: off, active and fillgas.
 - Initially, the gascar model will starts at off state, event "start(press z)" will trigger the model to active state with 10 units of gases.
-- In the active state, you can use "wsad" to move the car("*"), note each movement will burn down one unit gas. Event "addgas(press f)" will trigger the model to fillgas state. 
+- In the active state, you can use "wsad" to move the car(simplified by "*"), note each movement will burn down one unit gas. Event "addgas(press f)" will trigger the model to fillgas state. 
 - In the fillgas state, you can press 'a' to add gas. Event "restart(press r)" will trigger the model back to active state.
 - Besides, event "park(press p)" will trigger the model from active to off state.
 - In any of the three states, you can press "q" to exit the gascar model simulation. 
@@ -65,7 +65,8 @@ Results
 
 Acknowledgements
 ---
-- Appreciate Professor Eric Klavins and TA Justin, Henry for teaching the embedded software engineering class.
+- Special appreciation Professor Eric Klavins and TA Justin, Henry for teaching the embedded software engineering class.
+- The gascar project is based on the elma system and elma C++ docker image.
 
 References
 ---

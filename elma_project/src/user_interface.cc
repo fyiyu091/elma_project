@@ -34,7 +34,7 @@ void UserInterface::update() {
     if (_gascar.currentgaslevel() == -1) {
        clear();
        attron(COLOR_PAIR(2));
-       mvprintw(20,25,"no can can run without resource!!!\n");
+       mvprintw(20,25,"no car can run without resource!!!\n");
        mvprintw(21,40,"quit");
        halt(); 
     }

@@ -82,13 +82,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>The source code for this project is available <a href="https://github.com/klavinslab/elma_project">on github</a>.</p>
 <p><a href="https://github.com/fyiyu091/elma_project">GasCar</a> is a project that uses the Elma system to simulate the gascar model.</p>
 <h2>Installation </h2>
-<pre class="fragment">git clone https://github.com/fyiyu091/elma_project
-cd elma_project
-docker run -v $PWD:/source -it klavins/elma:latest bash
-make
-make docs
-</pre><h2>Execution </h2>
-<p>To run the gascar, type </p><pre class="fragment">bin/gascar
+<p>git clone <a href="https://github.com/fyiyu091/elma_project">https://github.com/fyiyu091/elma_project</a> cd elma_project docker run -v $PWD:/source -it klavins/elma:latest bash make make docs</p>
+<h2>Execution </h2>
+<p>To run the gascar model, type </p><pre class="fragment">bin/gascar
 </pre><p>The gascar is controlled via the keyboard, via these keys:</p><ul>
 <li><b>z</b>: start the gascar (to active state)</li>
 <li><b>w</b>: move up</li>
@@ -99,12 +95,13 @@ make docs
 <li><b>f</b>: to fillgas state</li>
 <li><b>a</b>: add gas</li>
 <li><b>r</b>: back to active state</li>
+<li><b>p</b>: park to off state</li>
 </ul>
 <h2>Architecture </h2>
 <ul>
 <li>The gascar project is essentially a statemachine that has three states: off, active and fillgas.</li>
 <li>Initially, the gascar model will starts at off state, event "start(press z)" will trigger the model to active state with 10 units of gases.</li>
-<li>In the active state, you can use "wsad" to move the car("*"), note each movement will burn down one unit gas. Event "addgas(press f)" will trigger the model to fillgas state.</li>
+<li>In the active state, you can use "wsad" to move the car(simplified by "*"), note each movement will burn down one unit gas. Event "addgas(press f)" will trigger the model to fillgas state.</li>
 <li>In the fillgas state, you can press 'a' to add gas. Event "restart(press r)" will trigger the model back to active state.</li>
 <li>Besides, event "park(press p)" will trigger the model from active to off state.</li>
 <li>In any of the three states, you can press "q" to exit the gascar model simulation.</li>
@@ -142,7 +139,8 @@ make docs
 </ul>
 <h2>Acknowledgements </h2>
 <ul>
-<li>Appreciate Professor Eric Klavins and TA Justin, Henry for teaching the embedded software engineering class.</li>
+<li>Special appreciation Professor Eric Klavins and TA Justin, Henry for teaching the embedded software engineering class.</li>
+<li>The gascar project is based on the elma system and elma C++ docker image.</li>
 </ul>
 <h2>References </h2>
 <ul>
@@ -152,7 +150,7 @@ make docs
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 22 2019 01:21:34 for GasCar Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 22 2019 02:26:52 for GasCar Elma Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
