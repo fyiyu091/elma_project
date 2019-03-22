@@ -3,12 +3,11 @@ GasCar elma project
 
 [Elma](http://klavinslab.org/elma) is an event loop manager designed to teach embedded and reactive systems programming. This repository contains an example Elma project, showing how to use many Elma features, as well as illustrating how to arrange the files and directories in an Elma project.
 
-The source code for this project is available [on github](https://github.com/klavinslab/elma_project).
-
 [GasCar](https://github.com/fyiyu091/elma_project) is a project that uses the Elma system to simulate the gascar model. 
 
 Installation
 ---
+
     git clone https://github.com/fyiyu091/elma_project
     cd elma_project
     docker run -v $PWD:/source -it klavins/elma:latest bash
@@ -26,10 +25,10 @@ The gascar is controlled via the keyboard, via these keys:
 - **w**: move up
 - **s**: move down
 - **d**: move right
-- **a**: move left
+- **a**: move left (in active state)
 - **q**: quit
 - **f**: to fillgas state
-- **a**: add gas
+- **a**: add gas (in fillgas state)
 - **r**: back to active state
 - **p**: park to off state
 
@@ -65,10 +64,10 @@ Results
 
 Acknowledgements
 ---
-- Special appreciation Professor Eric Klavins and TA Justin, Henry for teaching the embedded software engineering class.
-- The gascar project is based on the elma system and elma C++ docker image.
+- Special appreciation to Professor Eric Klavins and TAs Justin, Henry for teaching the embedded software engineering class.
+- The gascar project is based on the elma system and the elma C++ docker image.
 
 References
 ---
 - [Ncurses](http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/)
-- [doxygen](http://www.doxygen.nl/index.html)
+- [Doxygen](http://www.doxygen.nl/index.html)
