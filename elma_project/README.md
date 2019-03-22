@@ -49,13 +49,18 @@ Results
 - Each state will have their own unique message displayed and different operational keys. 
 - The following are the different state screenshots. 
 
-- ![off_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/offstate.PNG)
 
-- ![active_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/activestate.PNG)
+- off_state
+![off_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/offstate.PNG)
 
-- ![fillgas_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/fillgasstate.PNG)
+- active_state 
+![active_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/activestate.PNG)
 
-- ![off_park_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/park_off.PNG)
+- fillgas_state 
+![fillgas_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/fillgasstate.PNG)
+
+- park_off_state
+![off_park_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/park_off.PNG)
 
 
 Acknowledgements
