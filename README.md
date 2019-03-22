@@ -1,4 +1,5 @@
 # elma_project
+Note: This is the development process notes README file, the README file please refer to https://github.com/fyiyu091/elma_project/blob/master/elma_project/README.md.
 The final project for embedded class
 My goal of the final project is to convert the Elma to with Java.
 The success for me will be that the converted Java Elma can do all the things that the current C++ Elma can.
@@ -11,9 +12,7 @@ Here are my current five milestones:
 4. Create the statemachine class.
 5. Achieve the http data communication.
 
-################################
 # 03/17/2019 important updates #
-################################
 My original idea was to convert C++ elma to Java, at this point, I have achieved following tasks:
    1. Installed the latest Java for my host machine.
    2. Pulled and built the openjdk docker image.
@@ -31,9 +30,7 @@ Therefore, I am re-define my project and here are my new five milestones:
 4. Implement the GUI part of the game.
 5. Finish the whole project and test the programs. 
 
-######################
 # 03/18/2019 updates #
-######################
 The intial gaming idea: 
    1. Create a 16*16 game area matrix.
    2. Randomly pops out a target object inside the matrix.
@@ -47,13 +44,12 @@ The useful summary from NCURSES study:
    - ch = getch() & ch == KEY_LEFT to get the arrow keys
    - function getyx() can be used to find out the present cursor co-ordinates
 
-######################
 # 03/19/2019 updates #
-######################
 The statemachine design details.
 The states: 
    - off state, start event will transit to active state
    - active state, collect 5 points will transit to the win state, 'q' will transits to the off state
    - win state, print message on the screen and exit event will transit to the off state
 
-
+# 03/21/2019 updates #
+The project is being commited, it should be the final form besides some minor adjustment possibly.

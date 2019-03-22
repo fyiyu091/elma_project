@@ -15,8 +15,8 @@ UserInterface::UserInterface(GasCar& gc) : Process("user input"), _gascar(gc) {
     timeout(1);  // Timeout for waiting for user input
     noecho();    // Do not echo user input to the screen
     curs_set(FALSE); // Do not show the cursor
-    column = 10;
-    row = 10;
+    column = 20;
+    row = 20;
 };
 
 void UserInterface::display_message(int x, int y, std::string msg) {

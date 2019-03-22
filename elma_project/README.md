@@ -47,7 +47,9 @@ Results
 ---
 - The code can simulate the car model behaviours as described above. 
 - Each state will have their own unique message displayed and different operational keys. 
+- The following are the different state screenshots. 
 
+![offstate]()
 1. The off state
 * the initializtion of the car model
 * "the current gas level is XX (watch your gas level!!!)"

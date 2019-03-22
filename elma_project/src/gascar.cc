@@ -23,7 +23,7 @@ GasCar::GasCar() : StateMachine("gascar") {
 
 
 void GasCar::active_entry_status() {
-     current_msg = "the car is started \npress 'a' to move left\npress 'w' to move up\npress 's' to move down\npress 'd' to move right\npress 'f' to add gas";
+     current_msg = "the car is started \npress 'a' to move left\npress 'w' to move up\npress 's' to move down\npress 'd' to move right\npress 'f' to add gas\npress 'p' to park the car";
 }
 
 void GasCar::fillgas_entry_status() {
