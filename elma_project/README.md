@@ -49,26 +49,14 @@ Results
 - Each state will have their own unique message displayed and different operational keys. 
 - The following are the different state screenshots. 
 
-![offstate](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/offstate.PNG)
-1. The off state
-* the initializtion of the car model
-* "the current gas level is XX (watch your gas level!!!)"
-* "the car is at off, press 'z' to start the car"
+- ![off_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/offstate.PNG)
 
-2. The active state
-    "the current gas level is XX (watch your gas level!!!)"
-    "the car is started"
-    "press 'a' to move left"
-    "press 'w' to move up"
-    "press 's' to move down"
-    "press 'd' to move right"
-    "press 'f' to add gas"
-    (the "*" stands for the gascar)
+- ![active_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/activestate.PNG)
 
-3. The fillgas state
-    "the current gas level is XX (watch your gas level!!!)"
-    "press 'a' to add gas to the car!!!"
-    "press 'r' to restart the car"
+- ![fillgas_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/fillgasstate.PNG)
+
+- ![off_park_state](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/park_off.PNG)
+
 
 Acknowledgements
 ---
@@ -76,5 +64,5 @@ Acknowledgements
 
 References
 ---
-[Ncurses](http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/)
-[doxygen](http://www.doxygen.nl/index.html)
+- [Ncurses](http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/)
+- [doxygen](http://www.doxygen.nl/index.html)
