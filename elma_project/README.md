@@ -49,7 +49,7 @@ Results
 - Each state will have their own unique message displayed and different operational keys. 
 - The following are the different state screenshots. 
 
-![offstate]()
+![offstate](https://github.com/fyiyu091/elma_project/blob/master/elma_project/docs/offstate.PNG)
 1. The off state
 * the initializtion of the car model
 * "the current gas level is XX (watch your gas level!!!)"
