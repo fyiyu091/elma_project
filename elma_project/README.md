@@ -10,6 +10,7 @@ Installation
 
     git clone https://github.com/fyiyu091/elma_project
     cd elma_project
+    cd elma_project (to project directory)
     docker run -v $PWD:/source -it klavins/elma:latest bash
     make
     make docs
